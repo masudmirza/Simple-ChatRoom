@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    background-color: antiquewhite;
+}
+
+.container {
+    max-width: 500px;
+    margin: 80px auto;
+    background-color:cadetblue;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.main {
+    padding: 30px 40px;
+}
+
+.main p {
+    margin-bottom: 20px;
+}
+
+.main .form-control {
+    margin-bottom: 20px;
+}
+
+.main label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.main input, select {
+    font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.main .btn {
+    margin-top: 20px;
+	width: 100%;
+}
+
+.btn, #leave-room {
+    cursor: pointer;
+	padding: 5px 15px;
+    border: 0;
+	font-size: 17px;
+    background-color: antiquewhite;
+    color: rgb(30, 97, 99);
+}
+
+.room-container {
+    max-width: 1100px;
+    background-color: white;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.room-header {
+    background-color: rgb(30, 97, 99);
+    border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+	text-decoration: none;
+}
+
+.room-main {
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.room-sidebar {
+    padding: 20px 20px 60px;
+	overflow-y: scroll;
+    background-color: cadetblue;
+}
+
+.room-sidebar h3 {
+    margin-bottom: 15px;
+}
+
+.room-sidebar h2 {
+    font-size: 20px;
+    padding: 10px;
+	margin-bottom: 20px;
+}
+
+ul {
+	list-style: none;
+}
+
+.room-sidebar ul li {
+    padding: 10px 0;
+}
+
+.room-messages {
+    padding: 30px;
+	max-height: 500px;
+	overflow-y: scroll;
+}
+
+.room-messages .message {
+	padding: 10px;
+	margin-bottom: 15px;
+    background-color: bisque;
+	border-radius: 5px;
+	overflow-wrap: break-word;
+}
+
+.room-messages .message .meta {
+	font-size: 15px;
+	font-weight: bold;
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.chat-messages .message .meta span {
+	color: #777;
+}
+
+.room-form-container {
+    background-color: rgb(30, 97, 99);
+    padding: 20px 30px;
+}
+
+
+.room-form-container form {
+    display: flex;
+}
+
+
+.room-form-container input {
+    font-size: 16px;
+	padding: 5px;
+	height: 40px;
+    flex: 1;
+}
+
+
+

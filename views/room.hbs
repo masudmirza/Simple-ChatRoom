@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Chat Room</title>
+</head>
+<body>
+    <div class="room-container">
+        <header class="room-header">
+            <h1>Chat App</h1>
+            <a href="/" id="leave-room">Leave</a>
+        </header>
+        <main class="room-main">
+           <div class="room-sidebar">
+               <h3>Room Name:</h3>
+               <h2 id="room-name"></h2>
+               <h3>Users:</h3>
+               <ul id="users"></ul>
+           </div> 
+           <div class="room-messages">
+            {{#each data}}
+            <div class="message">
+                <p class="meta">
+                    {{this.sender}}
+                    <span>
+                        {{this.time}}
+                    </span>
+                </p>
+                <p class="text">{{this.message}}</p>
+            </div>
+            {{/each}}
+           </div>
+        </main>
+        <div class="room-form-container">
+            <form id="room-form">
+                <input type="text" id="message-input" placeholder="Enter message" required autocomplete="off">
+                <button class="btn">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.1/socket.io.js" integrity="sha512-9mpsATI0KClwt+xVZfbcf2lJ8IFBAwsubJ6mI3rtULwyM3fBmQFzj0It4tGqxLOGQwGfJdk/G+fANnxfq9/cew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.3/qs.min.js" integrity="sha512-juaCj8zi594KHQqb92foyp87mCSriYjw3BcTHaXsAn4pEB1YWh+z+XQScMxIxzsjfM4BeVFV3Ij113lIjWiC2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
