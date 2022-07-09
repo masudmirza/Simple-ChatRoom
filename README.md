@@ -6,7 +6,7 @@
 - [Technologies](#Technologies)
 ---
 ## **Description**
-This is a mini chat application using HTML,CSS,JavaScript,Node.js,Express.js and PostgreSQLUsing from it is very basic. You judt enter your username and select room you want.
+This is a mini chat application using HTML,CSS,JavaScript,Node.js,Express.js and PostgreSQL. Using from it is very basic. You just enter your username and select room you want.
 ---
 ## **Installation**
 1. Start by forking this repository on Github.
